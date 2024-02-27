@@ -1,0 +1,199 @@
+/* All the colors to be used */
+:root {
+    --dark: #352F44;
+    --light: #5C5470;
+    --lightest: #B9B4C7;
+    --beige: #FAF0E6;
+    --hover: #D1D9EB
+
+}
+
+/* Keep the header attached to every side of the website */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* White patch container for the logo */
+.logo-container {
+    background-color: var(--beige);
+    text-align: center;
+    position: sitcky; /* Position the logo container sticky */
+    top: 0; /* Place it at the top of the viewport */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the entire width */
+
+}
+
+.logo-container img {
+    height: 150px;
+    max-width: 100%; /* Ensure the logo image is responsive */
+}
+
+/* The design for whole heading */
+header {
+    background-color: var(--dark);
+    color: white;
+    text-align: center; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Make the list items centered */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+/* Has to do with the header text */
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* The text in the header when hovered on is turned a lighter color */
+header nav ul li a:hover {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--dark);
+    min-width: 100px;
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0; /* Align the dropdown with the parent */
+}
+
+.dropdown li {
+    float: none;
+}
+
+.dropdown li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Show dropdown on hover */
+#nav li.dropdown-parent {
+    position: relative;
+}
+
+
+#nav li.dropdown-parent:hover .dropdown {
+    display: block;
+}
+
+/* Styles for the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between sidebar and slideshow */
+    padding: 20px;
+}
+
+/* Styles for the sidebar container */
+.sidebar {
+    width: 45%; 
+    min-height: 420px;
+    background-color: var(--lightest);
+}
+
+.Welcome, .town-name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    font-size: 41px; 
+    max-width: 90%; 
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.separator {
+    border: none;
+    border-top: 4px solid var(--dark);
+    width: 90%; 
+    margin-left: 10px;
+}
+
+/* Media query for smaller font size on phones */
+@media only screen and (max-width: 768px) {
+    .Welcome, .town-name {
+        font-size: 18px; /* Smaller font size for phones */
+    }
+}
+
+/* Reset default margin and padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative; 
+  width: 55%; 
+  height: 100vh;
+  overflow: hidden
+}
+
+/* Individual slides */
+.mySlides {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: 0; 
+  transition: opacity 1s ease-in-out;
+}
+
+/*Slide Images*/
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    background-color: var(--beige); 
+}
+
+
+
+/*ABOUT PAGE STYLES */
+
+.about {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.about img {
+    width: 200px; /* Adjust image width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center image and add margin below it */
+}
+
+.about p {
+    font-style: italic;
+}
