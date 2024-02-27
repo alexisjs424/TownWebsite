@@ -184,16 +184,17 @@ body {
 
 .about {
     text-align: center;
-    margin-bottom: 20px; /* Adjust spacing as needed */
+    margin-bottom: 30px;
 }
 
-.about img {
-    width: 200px; /* Adjust image width as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto 10px; /* Center image and add margin below it */
+.about-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.about p {
-    font-style: italic;
+.about-line {
+    width: 250px;
+    border-top: 2px solid var(--light);
+    margin: 0 auto;
 }
