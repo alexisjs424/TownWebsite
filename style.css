@@ -241,10 +241,82 @@ body {
 
 .circle p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--dark); 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+.geographydesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.Geography {
+    flex: 1;
+    margin-right: 40px; 
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark); 
+    font-size: 18px;
+    background-color: var(--beige);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+
+}
+
+.FirstImg img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 60px;
+    margin-right: 30px; 
+    margin-top: 76px;
+}
+
+
+
+.economicdesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.EconomicOutlook {
+    flex: 1;
+    margin-right: 20px; 
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark); 
+    font-size: 18px;
+    background-color: var(--beige);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+}
+
+.ScndImg img {
+   width: 500px; /* Ensure image does not exceed container width */
+   margin-right: 50px;
+   height: auto; /* Maintain aspect ratio */
+   margin-left: 60px;
+   margin-top: 159px;
+}
 
