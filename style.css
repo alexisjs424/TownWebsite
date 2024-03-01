@@ -217,6 +217,11 @@ body {
     color: var(--dark);
     font-size: 22px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Firstdesc:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 
@@ -271,8 +276,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 
+}
+
+.Geography:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 .FirstImg img {
@@ -309,7 +319,12 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.EconomicOutlook:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 .ScndImg img {
@@ -400,3 +415,60 @@ body {
 .hours .day-time-pair .time {
     color: black; /* Example style for the time */
 }
+
+
+/*LINKS PAGE STYLES */
+
+.quickLinks {
+    margin-top: 40px;
+    margin-left: 86px;
+    color: var(--dark);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+.link-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+  .link-container:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
+  }
+  
+  .link-image {
+    width: 150px;
+    margin-right: 20px; /* Add some space between image and text */
+    margin-left: 20px;
+  }
+  
+  .link-text {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .link-text:hover {
+    color:darkblue;
+    
+  }
