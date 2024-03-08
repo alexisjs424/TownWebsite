@@ -472,3 +472,44 @@ body {
     color:darkblue;
     
   }
+
+
+
+
+  /* HIGHWAY SUPERINTENDENT PAGE!! */
+
+   /* Styles for the content container */
+   .main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the box takes up at least the full viewport height */
+    background-color: var(--beige);
+}
+
+
+/* Styles for the center box */
+.center-box {
+    background-color: var(--lightest); /* Light purple */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Make the box wider */
+    max-width: 800px; /* Limit the maximum width */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;;
+}
+
+.center-box p {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.center-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    width: 40%; /* Make the image smaller */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
