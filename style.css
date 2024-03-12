@@ -12,7 +12,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--beige);
 }
+
 
 /* White patch container for the logo */
 .logo-container {
@@ -101,83 +103,155 @@ header nav ul li a:hover {
 #nav li.dropdown-parent:hover .dropdown {
     display: block;
 }
-
-/* Styles for the content container */
+/* Styles for the top half purple box */
 .content-container {
-    display: flex;
-    justify-content: space-between; /* Distribute space between sidebar and slideshow */
+    background-color: var(--lightest); /* Light purple color */
     padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden; /* Clear floats */
+    border-radius: 10px;
 }
 
-/* Styles for the sidebar container */
+/* Styles for the "Welcome to Broadalbin" text */
+.Welcome {
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    color: var(--lightest); /* Purple color */
+    margin-top: 20px;
+}
+
+/* Styles for the paragraph */
 .sidebar {
-    width: 45%; 
-    min-height: 420px;
-    background-color: var(--lightest);
+    float: left;
+    width: 50%;
 }
 
-.Welcome, .town-name {
+.sidebar .text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark);
-    font-size: 41px; 
-    max-width: 90%; 
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-
+    
 }
 
-.separator {
+.sidebar .paragraph {
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:600;
+    margin-bottom: 15px;
+}
+
+.sidebar .paragraph p{
+    text-indent: 30px;
+    margin-bottom:-10px;
+}
+
+.sidebar .Welcome {
+    font-size: 35px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    max-width: 90%; 
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-shadow: 6px 6px 6px grey;
+}
+
+
+.sidebar .town-name {
+    font-size: 90px;
+    font-family: 'Italianno', serif;
+    text-shadow: 6px 6px 6px grey;
+    text-align: center;
+    color: var(--dark); 
+    margin-top: -25px;
+    margin-left: -35px;
+    margin-bottom: -8px;
+}
+
+.sidebar .separator {
     border: none;
     border-top: 4px solid var(--dark);
     width: 90%; 
-    margin-left: 10px;
+    margin-left: 21px;
 }
 
-/* Media query for smaller font size on phones */
-@media only screen and (max-width: 768px) {
-    .Welcome, .town-name {
-        font-size: 18px; /* Smaller font size for phones */
-    }
-}
-
-/* Reset default margin and padding */
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
-
-/* Slideshow container */
+/* Styles for the slideshow */
 .slideshow-container {
-  position: relative; 
-  width: 55%; 
-  height: 100vh;
-  overflow: hidden
+    float: right;
+    position: relative;
+
+    overflow: hidden;
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 /* Individual slides */
 .mySlides {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  opacity: 0; 
-  transition: opacity 1s ease-in-out;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+
+  }
+
+
+    /* Styles for the slideshow */
+.slideshow-container {
+    float: right;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    width: 50%;
+    margin-top: 97px;
+   
 }
 
-/*Slide Images*/
+/* Individual slides */
+.mySlides {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+
+  }
+
 .mySlides img {
-    width: 100%;
+    width: 100%; /* Make images responsive */
     height: auto;
     display: block;
-    object-fit: cover;
+    margin-left:20px;
+    
+   
+}
+  
+
+/* Styles for announcements */
+.announcements {
+    padding: 20px;
+    flex: 1; /* Take up 1/3 of the available space */
 }
 
-body {
-    background-color: var(--beige); 
+.announcements h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
+.announcements .announcement {
+    margin-top: 20px;
+}
+
+.announcements .announcement h3 {
+    font-size: 18px;
+    color: #6A0DAD; /* Purple color */
+}
 
 
 /* ABOUT PAGE STYLES */
