@@ -233,25 +233,43 @@ header nav ul li a:hover {
 }
   
 
-/* Styles for announcements */
-.announcements {
-    padding: 20px;
-    flex: 1; /* Take up 1/3 of the available space */
-}
+/* CSS for town board section */
 
-.announcements h2 {
-    font-family: Arial, sans-serif;
-    color: #333;
+.board-heading {
+    margin-left: 30px;
 }
-
-.announcements .announcement {
+.town-board-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
+    margin-right: 50px;
 }
 
-.announcements .announcement h3 {
-    font-size: 18px;
-    color: #6A0DAD; /* Purple color */
+.member {
+    text-align: center;
+    margin-right: 25px;
+    padding-top:40px;
+    padding-bottom:40px;
+    border-radius: 10px; /* Add rounded corners for card appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+    background-color: var(--beige); /* Set background color for cards */
+    max-width: 250px; /* Set maximum width for cards */
 }
+
+.member img {
+    
+    width: 210px; /* Adjust as needed */
+    padding-right:10px;
+    height: 280px; /* Adjust as needed */
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 
 
 /* ABOUT PAGE STYLES */
