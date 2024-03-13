@@ -1,8 +1,9 @@
 /* All the colors to be used */
 :root {
-    --dark: #352F44;
-    --light: #5C5470;
-    --lightest: #B9B4C7;
+    --dark: #04235A;
+    
+    --light: #064490;
+    --lightest: #C3E0EA;
     --beige: #FAF0E6;
     --hover: #D1D9EB
 
@@ -240,6 +241,7 @@ header nav ul li a:hover {
     text-decoration: underline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 6px 6px 6px grey;
+    color: var(--dark);
 
 }
 .town-board-section {
@@ -262,7 +264,7 @@ header nav ul li a:hover {
     margin-bottom: 40px;
     border-radius: 12px; /* Add rounded corners for card appearance */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
-    background-color: var(--beige); /* Set background color for cards */
+    background-color: var(--lightest); /* Set background color for cards */
     max-width: 250px; /* Set maximum width for cards */
 }
 
@@ -278,6 +280,7 @@ header nav ul li a:hover {
 
 .member-details h2{
     font-family: 'Italianno', serif;
+    color: var(--dark);
     font-size: 39px;
     font-weight: bolder;
     padding-top: -5px;
@@ -288,6 +291,7 @@ header nav ul li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     margin-top: -5px;
+    color: var(--dark);
     
 }
 
