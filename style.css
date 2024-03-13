@@ -184,7 +184,6 @@ header nav ul li a:hover {
 .slideshow-container {
     float: right;
     position: relative;
-
     overflow: hidden;
     width: 50%;
     margin-top: 30px;
@@ -237,6 +236,11 @@ header nav ul li a:hover {
 
 .board-heading {
     margin-left: 30px;
+    margin-top: 25px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 6px 6px 6px grey;
+
 }
 .town-board-section {
     display: flex;
@@ -248,30 +252,59 @@ header nav ul li a:hover {
 
 .member {
     text-align: center;
-    margin-right: 25px;
     padding-top:40px;
     padding-bottom:40px;
-    border-radius: 10px; /* Add rounded corners for card appearance */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+    padding-left:-5px;
+    padding-right:-5px;
+    margin-left: 22px;
+    margin-right:5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 12px; /* Add rounded corners for card appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
     background-color: var(--beige); /* Set background color for cards */
     max-width: 250px; /* Set maximum width for cards */
 }
 
-.member img {
-    
-    width: 210px; /* Adjust as needed */
-    padding-right:10px;
-    height: 280px; /* Adjust as needed */
-    margin-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+
+/* Styles for member images */
+.member-img {
+    width: 140px; /* You can adjust the width as needed */
+    height: 180px; /* You can adjust the height as needed */
+    margin-left:40px;
+    margin-right: 40px; /* Add some space between image and details */
 }
 
 
+.member-details h2{
+    font-family: 'Italianno', serif;
+    font-size: 39px;
+    font-weight: bolder;
+    padding-top: -5px;
+    padding-bottom: -25px;
+}
 
+.member-details p{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin-top: -5px;
+    
+}
 
+.title {
+
+    font-weight: bolder;
+}
+
+.member-details {
+   
+    padding-bottom: 20px;
+    border-radius: 10px;
+    
+    margin-left:20px;
+    margin-right:20px;
+    padding-top: 5px;
+}
 /* ABOUT PAGE STYLES */
 
 .about {
