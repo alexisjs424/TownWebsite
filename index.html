@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
 
-                <li class="dropdown-parent"><a href="departments/departments.html">Departments</a>
+                <li class="dropdown-parent"><a>Departments</a>
                     <ul class="dropdown">
                         <li><a href="departments/assessment.html">Assessment</a></li>
                         <li><a href="departments/clerk.html">Town Clerk</a></li>
@@ -82,6 +82,12 @@
             </div>
             <div class="mySlides">
                 <img src="pic4.png" alt="Image 4">
+            </div>
+            <div class="mySlides">
+                <img src="pic5.png" alt="Image 5">
+            </div>
+            <div class="mySlides">
+                <img src="pic6.png" alt="Image 6">
             </div>
         </div>
 
@@ -146,8 +152,48 @@
             </div>
         </div>
       </div>
-       
+
+      
+
     
+    <div class="calendar">
+    <div class="calendar-content">
+        <div class="header">
+            <div class="navigation">
+                <button id="prevMonthBtn">&lt;</button>
+                <div class="month-year" id="currentMonthYear"></div>
+                <button id="nextMonthBtn">&gt;</button>
+            </div>
+        </div>
+        <div class="days-of-week" id="daysOfWeek">
+            <!-- Days of the week will be dynamically added here -->
+        </div>
+        <div class="calendar-grid">
+            <div class="days" id="calendarDays"></div>
+        </div>
+    </div>
+    <div class="events-container">
+        <!-- Separate container for each event -->
+        <div class="event-box" id="eventBox1"></div>
+        <div class="event-box" id="eventBox2"></div>
+        <div class="event-box" id="eventBox3"></div>
+        <!-- Add more event boxes as needed -->
+    </div>
+</div>
+
+    
+      
+      
+      
+    
+
+
+    
+    
+
+
+
+
     <script src="script.js"></script>
 </body>
 

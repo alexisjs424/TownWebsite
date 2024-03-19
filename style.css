@@ -1,7 +1,6 @@
 /* All the colors to be used */
 :root {
     --dark: #04235A;
-    
     --light: #064490;
     --lightest: #C3E0EA;
     --beige: #FAF0E6;
@@ -104,9 +103,10 @@ header nav ul li a:hover {
 #nav li.dropdown-parent:hover .dropdown {
     display: block;
 }
-/* Styles for the top half purple box */
+
+/* Styles for the top half blue box */
 .content-container {
-    background-color: var(--lightest); /* Light purple color */
+    background-color: var(--lightest); 
     padding: 20px;
     margin-top: 20px;
     margin-left: 20px;
@@ -120,7 +120,7 @@ header nav ul li a:hover {
     
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 36px;
-    color: var(--lightest); /* Purple color */
+    color: var(--lightest); 
     margin-top: 20px;
 }
 
@@ -224,7 +224,7 @@ header nav ul li a:hover {
   }
 
 .mySlides img {
-    width: 100%; /* Make images responsive */
+    width: 100%; 
     height: auto;
     display: block;
     margin-left:20px;
@@ -262,19 +262,19 @@ header nav ul li a:hover {
     margin-right:5px;
     margin-top: 10px;
     margin-bottom: 40px;
-    border-radius: 12px; /* Add rounded corners for card appearance */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
-    background-color: var(--lightest); /* Set background color for cards */
-    max-width: 250px; /* Set maximum width for cards */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    background-color: var(--lightest); 
+    max-width: 250px; 
 }
 
 
 /* Styles for member images */
 .member-img {
-    width: 140px; /* You can adjust the width as needed */
-    height: 180px; /* You can adjust the height as needed */
+    width: 140px; 
+    height: 180px; 
     margin-left:40px;
-    margin-right: 40px; /* Add some space between image and details */
+    margin-right: 40px; 
 }
 
 
@@ -304,11 +304,169 @@ header nav ul li a:hover {
    
     padding-bottom: 20px;
     border-radius: 10px;
-    
     margin-left:20px;
     margin-right:20px;
     padding-top: 5px;
 }
+
+
+/* Styles for TOWN CALENDAR */
+
+
+.calendar {
+    max-width: 600px;
+    padding-right: 728px;
+    padding-left: 50px;
+    padding-bottom:50px;
+    padding-top:50px;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    background-color: var(--dark);
+    position:relative;
+    display: flex;
+  }
+
+ 
+  .event-day {
+    background-color: yellow; /* Adjust the highlighting color */
+    color: black; /* Adjust the text color if needed */
+    }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .month-year {
+    font-size: 60px;
+    font-family: 'Italianno', serif;
+    color: var(--lightest);
+    font-weight: bold;
+    border-bottom: 2px solid var(--dark); /* Add a line under the month */
+  }
+  
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .navigation button {
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove borders */
+    font-size: 24px;
+    color: var(--lightest); /* Change the color */
+    cursor: pointer;
+  }
+  
+  .navigation button:hover {
+    color: var(--beige); /* Change color on hover */
+  }
+  
+  .days-of-week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .day {
+    flex-grow: 1;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--lightest);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px; /* Increased gap between grid items */
+  }
+
+  .days-of-week {
+    padding-bottom: 20px; /* Adjust the padding as needed */
+}
+  
+  .day::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .prev-month-day,
+  .next-month-day {
+    color: gray;
+  }
+  
+  .events-container {
+    display: flex; /* Change display to flex */
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center;
+    width: 900px;
+    padding: 10px;
+    margin-left: 80px;
+}
+.event-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Italiano", sans-serif;
+    background-color: var(--lightest);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a single box shadow */
+  }
+  
+  .event-date {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Italiano";
+    margin-bottom: 10px;
+  }
+  
+  .event-name {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Italiano", sans-serif;
+  }
+  
+  
+/* Add hover effect to calendar days */
+.day.event-day:hover .day {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+  
+  /* Add hover effect to event boxes */
+  .event-box:hover {
+    transform: scale(1.05); /* Enlarge event box */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+  }
+  
+
+
 /* ABOUT PAGE STYLES */
 
 .about {
