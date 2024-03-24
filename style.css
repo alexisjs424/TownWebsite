@@ -828,7 +828,7 @@ header nav ul li a:hover {
     padding-bottom: 30px;
     margin-bottom: 20px;
     border-radius: 12px; 
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
 }
 
 .container1 img {
@@ -846,6 +846,7 @@ header nav ul li a:hover {
     margin-left: 50px;
     margin-right: 300px;
     display: flex;
+    border-radius: 20px;
 }
 
 .assessor-section {
@@ -855,6 +856,7 @@ header nav ul li a:hover {
     border-radius: 12px; 
     width: 205px;
     text-align: center;
+    
 }
 
 .assessor-section h2 {
@@ -895,6 +897,7 @@ header nav ul li a:hover {
     border-radius: 12px; 
     width: 220px; 
     text-align: center;
+   
 }
 
 .information h2 {
@@ -912,8 +915,97 @@ header nav ul li a:hover {
 
 .container2 {
     background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+
 }
 
+.assess-calendar {
+    background-color: var(--lightest);
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 90px;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 500px;
+    
+}
+
+.assess-calendar p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 50px;
+}
+.assess-forms {
+    background-color: var(--lightest);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.assess-calendar h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.assess-forms h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.assess-forms p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.star-program {
+    background-color: var(--lightest);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+   
+}
+
+.star-program h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.star-program p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 15px;
+}
 .container3 {
     background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 12px; 
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
 }
+
