@@ -238,7 +238,7 @@ header nav ul li a:hover {
 .board-heading {
     margin-left: 30px;
     margin-top: 25px;
-    text-decoration: underline;
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 6px 6px 6px grey;
     color: var(--dark);
@@ -266,6 +266,12 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
     background-color: var(--lightest); 
     max-width: 250px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.member:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 
@@ -799,4 +805,115 @@ header nav ul li a:hover {
     width: 40%; /* Make the image smaller */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+
+/*ASSESSMENT DEPARTMENT STYLES */
+
+.assessment-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+.container1 {
+    background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    
+}
+
+.container1 img {
+    margin-left: 30px;
+    margin-right: -10px;
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.asses {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 50px;
+    margin-right: 300px;
+    display: flex;
+}
+
+.assessor-section {
+   
+    padding-left: 60px;
+    padding-right: 2px;
+    border-radius: 12px; 
+    width: 205px;
+    text-align: center;
+}
+
+.assessor-section h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+
+.assessor-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 20px;
+}
+.office-hours {
+    padding-left: 10px;
+    padding-right: 30px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.office-hours h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.office-hours p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 90px;
+}
+
+.information {
+    padding-left: 30px;
+    padding-right: 40px;
+    border-radius: 12px; 
+    width: 220px; 
+    text-align: center;
+}
+
+.information h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.information p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 15px;
+   
+}
+
+.container2 {
+    background-color: var(--dark);
+}
+
+.container3 {
+    background-color: var(--dark);
 }
