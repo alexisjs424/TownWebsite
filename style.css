@@ -1854,7 +1854,7 @@ header nav ul li a:hover {
 
 .boards-section {
    
-    padding-left: 80px;
+    padding-left: 70px;
     border-radius: 12px; 
     width: 280px;
     text-align: center;
@@ -1864,6 +1864,7 @@ header nav ul li a:hover {
 .boards-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    padding-left: 40px;
    
 }
 
@@ -1872,7 +1873,7 @@ header nav ul li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 55px;
 }
 
 .boards-information {
@@ -1895,4 +1896,189 @@ header nav ul li a:hover {
     text-align: left;
     padding-left: 65px;
    
+}
+
+
+.fees-container {
+    background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.fees {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 45px;
+    padding-left: 40px;
+    margin-right: 560px; /* Adjust as needed */
+    display: flex;
+    border-radius: 20px;
+}
+
+.fees-table h2{
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.fees-table p {
+    padding-left: 15px;
+    padding-right: 50px; /* Adjust as needed */
+    padding-top: 10px;
+    margin-right: 0; /* Remove margin-right */
+    font-size: 16px;
+}
+
+table td {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+table th {
+    text-align: left;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.notes {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: -460px; /* Adjust as needed */
+    margin-right: 40px; /* Adjust as needed */
+    padding-left: 70px; /* Adjust as needed */
+    padding-right: 70px; /* Adjust as needed */
+    border-radius: 20px;
+}
+
+.notes-info {
+    padding-left: 60px;
+    padding-right: -80px;
+}
+
+.notes h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+
+}
+
+.notes p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    margin-bottom: 20px; /* Adjust as needed */
+    text-align: center;
+    padding-right: 120px; /* Adjust as needed */
+    padding-left: 40px;
+}
+.notes a {
+    color: red;
+    text-decoration: underline;
+}
+
+.notes a:hover {
+    color: darkblue;
+}
+
+.appeals-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+
+.appeals-container {
+    background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.appeals-container img {
+    margin-left: 30px;
+    margin-right: -10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 370px;
+    height: 300px;
+    
+}
+
+.appeals {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 55px;
+    margin-right: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.board-appeals {
+   
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: 12px; 
+    width: 420px;
+    text-align: center;
+    
+}
+
+.board-appeals h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.board-appeals p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 90px;
+}
+
+
+.general-info {
+    padding-left: -50px;
+    padding-right: 140px;
+    border-radius: 12px; 
+    width: 280px;
+    text-align: center;
+}
+
+.general-info h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.general-info p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 49px;
+    padding-right: 20px;
+    margin-right: -30px;
+}
+.general-info a {
+    color: red;
+    text-decoration: underline;
+}
+
+.general-info a:hover {
+    color: darkblue;
 }
