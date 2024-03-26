@@ -1529,3 +1529,222 @@ header nav ul li a:hover {
     text-align: left;
     padding-left: 14px;
 }
+
+/* Justice Court Page */
+
+.justicecourt-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+
+.contained1 {
+    background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+
+.contained1 img {
+    margin-left: 30px;
+    margin-right: -10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 370px;
+    height: 300px;
+    
+}
+
+
+.justice {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 55px;
+    margin-right: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+
+.justice-section {
+   
+    padding-left: 50px;
+    border-radius: 12px; 
+    width: 115px;
+    text-align: center;
+    
+}
+
+.justice-section h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.justice-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 29px;
+}
+
+.justice-hours {
+    padding-left: 25px;
+    padding-right: 10px;
+    border-radius: 12px;
+    margin-left:-50px;
+    margin-right: -29px;
+    width: 300px;
+    text-align: center;
+}
+
+.justice-hours h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.justice-hours p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 84px;
+}
+
+.justice-information {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 12px; 
+    width: 220px; 
+    text-align: center;
+   
+}
+
+.justice-information h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.justice-information p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 21px;
+   
+}
+
+.sessions {
+    padding-left: 10px;
+    border-radius: 12px; 
+    width: 220px; 
+    text-align: center;
+   
+}
+
+.sessions h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.sessions p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 18px;
+   
+}
+
+
+/* Tax Collector Page*/
+
+.taxcollector-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+
+.tax {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 55px;
+    margin-right: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.tax-section {
+   
+    padding-left: 30px;
+    border-radius: 12px; 
+    width: 200px;
+    text-align: center;
+    
+}
+
+.tax-section h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.tax-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 41px;
+}
+
+
+.tax-hours {
+    padding-left: 25px;
+    padding-right: 10px;
+    border-radius: 12px;
+    margin-left:-50px;
+    margin-right: -29px;
+    width: 430px;
+    text-align: center;
+}
+
+.tax-hours h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.tax-hours p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 155px;
+}
+
+.tax-information {
+    padding-left: 35px;
+    padding-right: 20px;
+    border-radius: 12px; 
+    width: 234px; 
+    text-align: center;
+   
+}
+
+.tax-information h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.tax-information p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 35px;
+   
+}
