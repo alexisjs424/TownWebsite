@@ -270,9 +270,7 @@ header nav ul li a:hover {
 }
 
 
-.member:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
-}
+
 
 
 /* Styles for member images */
@@ -481,21 +479,16 @@ header nav ul li a:hover {
 
 .about-heading {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
 }
 
-.about-line {
-    width: 250px;
-    border-top: 2px solid var(--light);
-    margin: 0 auto;
-}
+
 
 .Firstdesc {
-    background-color: var(--beige);
+    background-color: var(--lightest);
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding-top: 25px;
@@ -511,10 +504,6 @@ header nav ul li a:hover {
     font-size: 22px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.Firstdesc:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 
@@ -545,6 +534,12 @@ header nav ul li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.circle h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    color: var(--dark);
+}
+
 
 .geographydesc {
     display: flex;
@@ -553,6 +548,11 @@ header nav ul li a:hover {
     margin-top: 20px;
 }
 
+.geographydesc h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    color: var(--dark);
+}
 .Geography {
     flex: 1;
     margin-right: 40px; 
@@ -561,7 +561,7 @@ header nav ul li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark); 
     font-size: 18px;
-    background-color: var(--beige);
+    background-color: var(--lightest);
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding-top: 25px;
@@ -572,10 +572,6 @@ header nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 
-}
-
-.Geography:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
 }
 
 .FirstImg img {
@@ -604,7 +600,7 @@ header nav ul li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark); 
     font-size: 18px;
-    background-color: var(--beige);
+    background-color: var(--lightest);
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding-top: 25px;
@@ -616,9 +612,12 @@ header nav ul li a:hover {
 
 }
 
-.EconomicOutlook:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
+.EconomicOutlook h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    color: var(--dark);
 }
+
 
 .ScndImg img {
    width: 500px; /* Ensure image does not exceed container width */
@@ -633,12 +632,10 @@ header nav ul li a:hover {
 /* HOURS PAGE STYLES */
 
 .HoursofOperation {
-    text-align: center;
+    margin-left: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--dark); 
-    font-weight: bold;
-    font-size: 20px;
-    padding-top: 20px;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
 }
 
 
@@ -675,16 +672,19 @@ header nav ul li a:hover {
     margin-right: 20px;
     margin-bottom: 10px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* Hover effect */
 .businessboxes:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
+   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect on hover */
 }
 
 .businessboxes h2 {
-    text-decoration: underline;
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+    color: var(--dark);
 
 }
 .hours {
@@ -699,32 +699,43 @@ header nav ul li a:hover {
     align-items: center; /* Align items vertically */
     padding-right:40px;
     font-size: 18px;
+    color: var(--dark);
 }
 
 .hours .day-time-pair p {
     font-weight: bold; /* Example style for the day of the week */
+    color: var(--dark);
 }
 
 .hours .day-time-pair .time {
-    color: black; /* Example style for the time */
+    color: var(--dark);; /* Example style for the time */
 }
+
+.hours .day-time-pair .time a{
+    color:red;
+    text-decoration: underline;
+}
+
+.hours .day-time-pair .time a:hover {
+    color: darkblue;
+}
+
 
 
 /*LINKS PAGE STYLES */
 
 .quickLinks {
-    margin-top: 40px;
-    margin-left: 86px;
-    color: var(--dark);
+    margin-left: 80px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 19px;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
 }
 .link-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-  
+    
     padding: 10px;
     margin-left: 80px;
     margin-right: 60px;
@@ -737,13 +748,11 @@ header nav ul li a:hover {
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--lightest);
 
   }
 
-  .link-container:hover {
-    transform: scale(1.05); /* Enlarge the box slightly on hover */
-  }
-  
+
   .link-image {
     width: 150px;
     margin-right: 20px; /* Add some space between image and text */
@@ -753,14 +762,14 @@ header nav ul li a:hover {
   .link-text {
     text-decoration: none;
     color: var(--dark);
-    font-size: 16px;
-    font-family: Arial, sans-serif;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
+    font-size: 20px;
+    
+    
   }
-  
+  .link-text {
+    color:red;
+  }
   .link-text:hover {
     color:darkblue;
     
@@ -815,11 +824,13 @@ header nav ul li a:hover {
     width: 205px;
     text-align: center;
     
+    
 }
 
 .assessor-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 
@@ -828,6 +839,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 20px;
+    color: var(--dark);
 }
 .office-hours {
     padding-left: 10px;
@@ -840,6 +852,7 @@ header nav ul li a:hover {
 .office-hours h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .office-hours p {
@@ -847,6 +860,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 90px;
+    color: var(--dark);
 }
 
 .information {
@@ -861,6 +875,7 @@ header nav ul li a:hover {
 .information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .information p {
@@ -868,6 +883,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
    
 }
 
@@ -895,6 +911,7 @@ header nav ul li a:hover {
     font-size: 18px;
     border-radius: 20px;
     width: 500px;
+    color: var(--dark);
     
 }
 
@@ -903,6 +920,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 50px;
+    color: var(--dark);
 }
 .assess-forms {
     background-color: var(--lightest);
@@ -919,12 +937,14 @@ header nav ul li a:hover {
     font-size: 30px;
     text-align: center;
     padding-left: 20px;
+    color: var(--dark);
 }
 
 .assess-forms h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .assess-forms p {
@@ -932,6 +952,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
 }
 
 .assess-forms a {
@@ -967,6 +988,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .star-program p {
@@ -974,6 +996,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
 }
 .container3 {
     background-color: var(--dark);
@@ -984,6 +1007,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    color: var(--dark);
 }
 
 .rolls-property {
@@ -1002,7 +1026,7 @@ header nav ul li a:hover {
     font-size: 40px;
     background-color: var(--lightest); /* Light blue background */
     border-radius: 10px; /* Rounded corners */
-
+    color: var(--dark);
 
 }
 
@@ -1090,6 +1114,7 @@ header nav ul li a:hover {
 .clerk-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 
@@ -1098,6 +1123,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 55px;
+    color: var(--dark);
 }
 .clerk-hours {
     padding-left: 10px;
@@ -1110,13 +1136,16 @@ header nav ul li a:hover {
 .clerk-hours h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
+
 
 .clerk-hours p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
     text-align: left;
     padding-left: 90px;
+    color: var(--dark);
 }
 
 .clerk-information {
@@ -1131,6 +1160,7 @@ header nav ul li a:hover {
 .clerk-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .clerk-information p {
@@ -1138,6 +1168,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
    
 }
 
@@ -1165,6 +1196,7 @@ header nav ul li a:hover {
     width: calc(80%); /* Calculate width to account for padding and margins */
     font-size: 18px;
     border-radius: 20px;
+    color: var(--dark);
 }
 
 
@@ -1173,6 +1205,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 10px;
+    color: var(--dark);
     
 }
 
@@ -1181,6 +1214,7 @@ header nav ul li a:hover {
     font-size: 30px;
     text-align: center;
     padding-left: 2px;
+    color: var(--dark);
 }
 
 
@@ -1189,6 +1223,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 20px;
+    color: var(--dark);
     
 }
 
@@ -1196,6 +1231,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .permits a {
@@ -1212,6 +1248,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .RegistrarofVitalStatistics p {
@@ -1219,6 +1256,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
 }
 
 
@@ -1226,6 +1264,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .transfer-station p {
@@ -1233,6 +1272,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 5px;
+    color: var(--dark);
 }
 
 
@@ -1250,6 +1290,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     text-align: center;
+    color: var(--dark);
 }
 
 .clerk-forms p {
@@ -1257,6 +1298,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 15px;
+    color: var(--dark);
 }
 
 
@@ -1304,6 +1346,7 @@ header nav ul li a:hover {
     margin-left: 10px;/* Add some margin between paragraphs */
     margin-bottom: 5px;
     padding-bottom: 10px;
+    color: var(--dark);
     
 }
 
@@ -1321,6 +1364,7 @@ header nav ul li a:hover {
     font-size: 30px;
     text-align: left;
     padding-left: 14px;
+    color: var(--dark);
 }
 
 
@@ -1379,6 +1423,7 @@ header nav ul li a:hover {
 .enforcement-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
    
 }
 
@@ -1388,6 +1433,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 29px;
+    color: var(--dark);
 }
 
 
@@ -1404,6 +1450,7 @@ header nav ul li a:hover {
 .enforcement-hours h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .enforcement-hours p {
@@ -1411,6 +1458,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 92px;
+    color: var(--dark);
 }
 
 .enforcement-information {
@@ -1425,6 +1473,7 @@ header nav ul li a:hover {
 .enforcement-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .enforcement-information p {
@@ -1432,6 +1481,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 21px;
+    color: var(--dark);
    
 }
 
@@ -1468,6 +1518,7 @@ header nav ul li a:hover {
     margin-left: 10px;/* Add some margin between paragraphs */
     margin-bottom: 5px;
     padding-bottom: 15px;
+    color: var(--dark);
    
     
 }
@@ -1486,6 +1537,7 @@ header nav ul li a:hover {
     font-size: 30px;
     text-align: left;
     padding-left: 14px;
+    color: var(--dark);
 }
 
 /* Justice Court Page */
@@ -1544,7 +1596,7 @@ header nav ul li a:hover {
 .justice-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
-   
+    color: var(--dark);
 }
 
 
@@ -1553,6 +1605,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 29px;
+    color: var(--dark);
 }
 
 .justice-hours {
@@ -1568,6 +1621,7 @@ header nav ul li a:hover {
 .justice-hours h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .justice-hours p {
@@ -1575,6 +1629,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 84px;
+    color: var(--dark);
 }
 
 .justice-information {
@@ -1589,6 +1644,7 @@ header nav ul li a:hover {
 .justice-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .justice-information p {
@@ -1596,6 +1652,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 21px;
+    color: var(--dark);
    
 }
 
@@ -1610,6 +1667,7 @@ header nav ul li a:hover {
 .sessions h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .sessions p {
@@ -1617,6 +1675,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 18px;
+    color: var(--dark);
    
 }
 
@@ -1651,7 +1710,7 @@ header nav ul li a:hover {
 .tax-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
-   
+    color: var(--dark);
 }
 
 
@@ -1660,6 +1719,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 41px;
+    color: var(--dark);
 }
 
 
@@ -1676,6 +1736,7 @@ header nav ul li a:hover {
 .tax-hours h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .tax-hours p {
@@ -1683,6 +1744,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 155px;
+    color: var(--dark);
 }
 
 .tax-information {
@@ -1697,6 +1759,7 @@ header nav ul li a:hover {
 .tax-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .tax-information p {
@@ -1704,6 +1767,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 35px;
+    color: var(--dark);
    
 }
 
@@ -1738,7 +1802,7 @@ header nav ul li a:hover {
 .highway-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
-   
+    color: var(--dark);
 }
 
 
@@ -1747,6 +1811,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 70px;
+    color: var(--dark);
 }
 
 .highway-information {
@@ -1761,6 +1826,7 @@ header nav ul li a:hover {
 .highway-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .highway-information p {
@@ -1768,6 +1834,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 65px;
+    color: var(--dark);
    
 }
 
@@ -1801,6 +1868,7 @@ header nav ul li a:hover {
 .historian-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
    
 }
 
@@ -1810,6 +1878,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 55px;
+    color: var(--dark);
 }
 
 
@@ -1865,7 +1934,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     padding-left: 40px;
-   
+    color: var(--dark);
 }
 
 
@@ -1874,6 +1943,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 55px;
+    color: var(--dark);
 }
 
 .boards-information {
@@ -1888,6 +1958,7 @@ header nav ul li a:hover {
 .boards-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .boards-information p {
@@ -1895,6 +1966,7 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 65px;
+    color: var(--dark);
    
 }
 
@@ -1926,6 +1998,7 @@ header nav ul li a:hover {
     font-family: 'Italianno', serif;
     font-size: 30px;
     padding-left: 20px;
+    color: var(--dark);
 }
 
 .fees-table p {
@@ -1934,6 +2007,7 @@ header nav ul li a:hover {
     padding-top: 10px;
     margin-right: 0; /* Remove margin-right */
     font-size: 16px;
+    color: var(--dark);
 }
 
 table td {
@@ -1941,12 +2015,14 @@ table td {
     padding-right: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
+    color: var(--dark);
 }
 
 table th {
     text-align: left;
     padding-left: 16px;
     font-size: 16px;
+    color: var(--dark);
 }
 
 .notes {
@@ -1967,7 +2043,7 @@ table th {
 .notes h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
-
+    color: var(--dark);
 }
 
 .notes p {
@@ -1977,6 +2053,7 @@ table th {
     text-align: center;
     padding-right: 120px; /* Adjust as needed */
     padding-left: 40px;
+    color: var(--dark);
 }
 .notes a {
     color: red;
@@ -2039,6 +2116,7 @@ table th {
 .board-appeals h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
    
 }
 
@@ -2048,6 +2126,7 @@ table th {
     font-size: 17px;
     text-align: left;
     padding-left: 90px;
+    color: var(--dark);
 }
 
 
@@ -2062,6 +2141,7 @@ table th {
 .general-info h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
    
 }
 
@@ -2073,6 +2153,7 @@ table th {
     padding-left: 49px;
     padding-right: 20px;
     margin-right: -30px;
+    color: var(--dark);
 }
 .general-info a {
     color: red;
@@ -2114,6 +2195,7 @@ table th {
 .dog-section h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
    
 }
 
@@ -2123,6 +2205,7 @@ table th {
     font-size: 17px;
     text-align: left;
     padding-left: 80px;
+    color: var(--dark);
 }
 
 .dog-information {
@@ -2137,6 +2220,7 @@ table th {
 .dog-information h2 {
     font-family: 'Italianno', serif;
     font-size: 30px;
+    color: var(--dark);
 }
 
 .dog-information p {
@@ -2144,6 +2228,7 @@ table th {
     font-size: 17px;
     text-align: left;
     padding-left: 85px;
+    color: var(--dark);
    
 }
 
