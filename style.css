@@ -768,48 +768,6 @@ header nav ul li a:hover {
 
 
 
-
-  /* HIGHWAY SUPERINTENDENT PAGE!! */
-
-   /* Styles for the content container */
-   .main-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the box takes up at least the full viewport height */
-    background-color: var(--beige);
-}
-
-
-/* Styles for the center box */
-.center-box {
-    background-color: var(--lightest); /* Light purple */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%; /* Make the box wider */
-    max-width: 800px; /* Limit the maximum width */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 15px;;
-}
-
-.center-box p {
-    font-size: 25px;
-    padding-top: 10px;
-}
-
-.center-box img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    width: 40%; /* Make the image smaller */
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-
-
-
 /*ASSESSMENT DEPARTMENT STYLES */
 
 .assessment-heading {
@@ -1746,5 +1704,69 @@ header nav ul li a:hover {
     font-size: 17px;
     text-align: left;
     padding-left: 35px;
+   
+}
+
+
+/* Highway Department Page*/
+
+.highway-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+
+.highway {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 55px;
+    margin-right: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.highway-section {
+   
+    padding-left: 80px;
+    border-radius: 12px; 
+    width: 280px;
+    text-align: center;
+    
+}
+
+.highway-section h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.highway-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.highway-information {
+    padding-left: 35px;
+    padding-right: 170px;
+    border-radius: 12px; 
+    width: 350px; 
+    text-align: center;
+   
+}
+
+.highway-information h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.highway-information p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 65px;
    
 }
