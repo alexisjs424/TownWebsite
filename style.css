@@ -1811,3 +1811,88 @@ header nav ul li a:hover {
     text-align: left;
     padding-left: 55px;
 }
+
+
+/* Boards Page */
+.boards-container {
+    background-color: var(--dark);
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.boards-container img {
+    margin-left: 30px;
+    margin-right: -10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 370px;
+    height: 300px;
+    
+}
+.boards-heading {
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    text-shadow: 6px 6px 6px grey;
+}
+
+.boards {
+    background-color: var(--lightest);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    margin-left: 55px;
+    margin-right: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.boards-section {
+   
+    padding-left: 80px;
+    border-radius: 12px; 
+    width: 280px;
+    text-align: center;
+    
+}
+
+.boards-section h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+   
+}
+
+
+.boards-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.boards-information {
+    padding-left: 35px;
+    padding-right: 170px;
+    border-radius: 12px; 
+    width: 350px; 
+    text-align: center;
+   
+}
+
+.boards-information h2 {
+    font-family: 'Italianno', serif;
+    font-size: 30px;
+}
+
+.boards-information p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 65px;
+   
+}
