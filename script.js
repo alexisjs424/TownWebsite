@@ -1,5 +1,6 @@
 // JavaScript for the slideshow
 
+
 // Initialize slide index
 let slideIndex = 0;
 showSlides();
@@ -39,13 +40,18 @@ let currentDate = new Date();
 let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 const events = [
-    { name: "Board Meeting", date: "2024-03-21" },
-    { name: "Presentation", date: "2024-03-25" },
-    { name: "Presentation Numba 2", date: "2024-04-05" },
+    { name: "Board Meeting", date: "2024-03-21",time: "12:00 PM" },
+    { name: "Presentation", date: "2024-03-25",time: "10:00 AM" },
+    { name: "Town Hall", date: "2024-03-10",time: "4:00 PM" },
+    { name: "Board Meeting", date: "2024-04-05",time: "1:00 PM" },
+    { name: "Board Meeting", date: "2024-05-09",time: "3:00 PM" },
     // Add more events as needed
 ];
 
-renderCalendar(currentMonth, currentYear);
+// Highlighting specific days
+const highlightedDays = ["2024-03-21", "2024-03-25"];
+
+renderCalendar(currentMonth, currentYear, events, highlightedDays);
 
 prevMonthBtn.addEventListener('click', () => {
   currentMonth--;
@@ -53,7 +59,7 @@ prevMonthBtn.addEventListener('click', () => {
     currentMonth = 11;
     currentYear--;
   }
-  renderCalendar(currentMonth, currentYear);
+  renderCalendar(currentMonth, currentYear, events, highlightedDays);
 });
 
 nextMonthBtn.addEventListener('click', () => {
@@ -62,10 +68,10 @@ nextMonthBtn.addEventListener('click', () => {
     currentMonth = 0;
     currentYear++;
   }
-  renderCalendar(currentMonth, currentYear);
+  renderCalendar(currentMonth, currentYear, events, highlightedDays);
 });
 
-function renderCalendar(month, year) {
+function renderCalendar(month, year, events, highlightedDays = []) {
   currentMonthYear.textContent = `${getMonthName(month)} ${year}`;
   daysOfWeekContainer.innerHTML = '';
 
@@ -91,11 +97,23 @@ function renderCalendar(month, year) {
     calendarDays.appendChild(prevMonthDay);
   }
 
-  for (let i = 1; i <= lastDayOfMonth; i++) { // Start from 1 instead of 0
+  for (let i = 1; i <= lastDayOfMonth; i++) {
     const day = document.createElement('div');
-    day.textContent = i; // Remove the period after the date
+    day.textContent = i;
     day.dataset.date = `${year}-${month + 1}-${i}`;
     day.classList.add('day');
+
+    // Check if the current day has events
+    const eventForDay = events.find(event => event.date === day.dataset.date);
+    if (eventForDay) {
+      day.classList.add('event-day'); // Add a class to indicate an event day
+    }
+
+    // Check if the current day is in the list of highlighted days
+    if (highlightedDays.includes(`${year}-${month + 1}-${i}`)) {
+      day.classList.add('highlighted-day');
+    }
+
     calendarDays.appendChild(day);
   }
 
@@ -109,37 +127,97 @@ function renderCalendar(month, year) {
     calendarDays.appendChild(nextMonthDay);
   }
   
-  renderEvents(); // Call renderEvents after rendering the calendar
+  renderEvents(month, year, events); // Call renderEvents after rendering the calendar
 }
+
 
 function getMonthName(month) {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   return months[month];
 }
 
-
-// Function to render events
-function renderEvents() {
+function renderEvents(month, year, events) {
   const eventsContainer = document.querySelector('.events-container');
-  eventsContainer.innerHTML = ''; // Clear previous events
+  eventsContainer.innerHTML = '';
 
-  events.forEach(event => {
+  // Filter events for the displayed month
+  const eventsForMonth = events.filter(event => {
+    const eventDate = new Date(event.date);
+    return eventDate.getMonth() === month && eventDate.getFullYear() === year;
+  });
+
+  eventsForMonth.forEach(event => {
     const eventBox = document.createElement('div');
     eventBox.classList.add('event-box');
 
+    const dateContainer = document.createElement('div'); // Create a container for the date
+    dateContainer.classList.add('date-container');
+
     const eventDate = document.createElement('div');
     eventDate.classList.add('event-date');
-    eventDate.textContent = event.date;
+    const monthAbbreviation = new Date(event.date).toLocaleString('default', { month: 'short' }).toUpperCase();
+    eventDate.textContent = monthAbbreviation;
+
+    const eventFullDate = document.createElement('div');
+    eventFullDate.classList.add('event-full-date');
+    eventFullDate.textContent = new Date(event.date).getDate() +1;
+
+    dateContainer.appendChild(eventDate);
+    dateContainer.appendChild(eventFullDate);
+    eventBox.appendChild(dateContainer);
+
+    const eventDetails = document.createElement('div');
+    eventDetails.classList.add('event-details');
 
     const eventName = document.createElement('div');
     eventName.classList.add('event-name');
     eventName.textContent = event.name;
 
-    eventBox.appendChild(eventDate);
-    eventBox.appendChild(eventName);
+    const eventTime = document.createElement('div');
+    eventTime.classList.add('event-time');
+    eventTime.textContent = event.time;
+
+    eventDetails.appendChild(eventName);
+    eventDetails.appendChild(eventTime);
+    eventBox.appendChild(eventDetails);
+
+    // Append the event box to the events container
     eventsContainer.appendChild(eventBox);
   });
 }
 
-// Call renderEvents function to initially render events
-renderEvents();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselContainer = document.querySelector(".carousel-container");
+  const announcements = document.querySelectorAll(".announcement");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  const announcementWidth = announcements[0].offsetWidth; // Width of one announcement
+  const carouselWidth = carouselContainer.offsetWidth; // Width of the visible carousel
+  const numVisibleAnnouncements = Math.floor(carouselWidth / announcementWidth); // Number of announcements visible at once
+  let currentIndex = 0;
+
+  function moveCarousel() {
+    currentIndex++;
+    if (currentIndex >= announcements.length - numVisibleAnnouncements + 1) {
+      currentIndex = 0;
+    }
+    const offset = -currentIndex * announcementWidth;
+    carouselContainer.style.transform = `translateX(${offset}px)`;
+  }
+
+  function moveBackward() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = announcements.length - numVisibleAnnouncements;
+    }
+    const offset = -currentIndex * announcementWidth;
+    carouselContainer.style.transform = `translateX(${offset}px)`;
+  }
+
+  nextButton.addEventListener("click", moveCarousel);
+  prevButton.addEventListener("click", moveBackward);
+
+  setInterval(moveCarousel, 4000);
+});

@@ -337,7 +337,6 @@ header nav ul li a:hover::after {
 
 /* Styles for TOWN CALENDAR */
 
-
 .calendar {
     max-width: 600px;
     padding-right: 728px;
@@ -356,11 +355,9 @@ header nav ul li a:hover::after {
   }
 
  
-  .event-day {
-    background-color: yellow; /* Adjust the highlighting color */
-    color: black; /* Adjust the text color if needed */
-    }
-  
+/* Add background color to event days */
+
+
   .header {
     text-align: center;
     margin-bottom: 20px;
@@ -446,50 +443,279 @@ header nav ul li a:hover::after {
     display: flex; /* Change display to flex */
     flex-direction: column; /* Stack boxes vertically */
     align-items: center;
-    width: 900px;
+    width: 100%;
     padding: 10px;
     margin-left: 80px;
-}
+   
+  }
+
+ 
+  
+/* Add this CSS to your existing stylesheet or create a new one */
+
 .event-box {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 390px;
     padding: 20px;
     margin: 10px;
-    font-family: "Italiano", sans-serif;
     background-color: var(--lightest);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a single box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--lightest);
+    
   }
   
   .event-date {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--dark);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    padding-right: 5px;
+    
+  }
+  
+  .event-full-date {
+    
+    font-size: 35px;
+    color: var(--dark);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
+    
+   
+  }
+  
+  .event-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-name,
+  .event-time {
     font-size: 24px;
-    font-weight: bold;
-    font-family: "Italiano";
-    margin-bottom: 10px;
+    color: var(--dark);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
   }
+ 
   
-  .event-name {
-    font-size: 18px;
-    text-align: center;
-    font-family: "Italiano", sans-serif;
-  }
+  .date-container {
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding-left: 20px; /* Adjust padding as needed */
+    padding-right: 5px;
+    margin-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--beige);
+    }
   
-  
-/* Add hover effect to calendar days */
-.day.event-day:hover .day {
-    font-size: 1.2em;
-    font-weight: bold;
+
+/* Quote/ Address Section on Home page*/
+
+.quote-section {
+    display: flex;
+    background-color: var(--dark); /* Background color for the quote section */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 20px;
+    color: var(--lightest);
+    margin-left: 30px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+    
 }
 
-  
-  /* Add hover effect to event boxes */
-  .event-box:hover {
-    transform: scale(1.05); /* Enlarge event box */
-    transition: transform 0.3s ease; /* Add smooth transition effect */
+.left-section {
+    flex: 1; /* Left section takes up all available space */
+    padding-right: 20px;
+    
+}
+
+.right-section {
+    flex: 1; /* Right section takes up all available space */
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.right-right {
+    flex: 1; 
+    margin-left: 20px;
+}
+
+.quote p{
+    font-style: italic; /* Make the quote italic */
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    color:var(--lightest);
+    font-size: 19px;
+}
+
+.quote h2 {
+    font-family: 'Italianno', serif;
+    font-size: 35px;
+}
+.contact-info p {
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+
+.contact-info h2 {
+    font-family: 'Italianno', serif;
+    font-size: 35px;
+}
+.quote-section img {
+    max-width: 75%; /* Ensure the image doesn't exceed its container width */
+     margin-left: 50px;
+     margin-bottom: 20px;
+     margin-top:40px;/* Add space below the image */
+}
+
+
+    /* Announcements part!*/
+    .announcement-carousel-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      
+      .announcement-carousel {
+        flex: 1; /* Occupy remaining space */
+        overflow: hidden;
+      }
+      
+      .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      
+      .announcement {
+        flex: 0 0 33.33%; /* 3 announcements visible at once */
+        padding-top:15px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        background-color: var(--lightest); /* Light blue color */
+        border: 1px solid var(--lightest); /* Border color */
+        border-radius: 5px; /* Border radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        margin-right: 30px;
+        margin-bottom: 20px;
+      }
+      .announcement p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: var(--dark);
+      }
+      
+      .announcement img {
+        width: 40%;
+        height: auto;
+      }
+      
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--dark);
+      }
+      button:hover {
+        color: red; /* Hover color */
+      }
+      .prev {
+        margin-right: 10px; /* Add spacing between buttons */
+      }
+      
+      .next {
+        margin-left: 10px; /* Add spacing between buttons */
+      }
+      
+
+/*BOARD MEETING MINS */
+
+.board-meeting-minutes {
+    width: 97%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-left: 20px; 
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
   }
   
+  .board-meeting-minutes th,
+  .board-meeting-minutes td {
+    padding: 12px; /* Add padding */
+    text-align: center; /* Center align text */
+    border: 1px solid var(--light); /* Add border */
+  }
+  
+  .board-meeting-minutes th {
+    background-color: var(--dark); 
+    color: var(--lightest);
+    
+  }
+  
+  .board-meeting-minutes a {
+    text-decoration: none; /* Remove underline */
+    color: var(--dark); /* Link color */
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .board-meeting-minutes a:hover {
+    text-decoration: underline; 
+    color: red;
+  }
+  
+
+/* ALL IMPORTANT FORMS SECTION*/
+
+.form-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: var(--dark);
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.form-box {
+    background-color: var(--lightest); /* Light blue color */
+    padding: 20px;
+    margin: 10px;
+    text-align: center; /* Center align text */
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+/* Style for the links */
+.form-link {
+    color: var(--dark); /* Link color */
+    text-decoration: none; 
+}
+
+.form-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+/* Grid layout */
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 18px; /* Gap between grid items */
+}
+
+
 
 
 /* ABOUT PAGE STYLES */
