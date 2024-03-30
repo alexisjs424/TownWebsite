@@ -40,12 +40,27 @@ let currentDate = new Date();
 let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 const events = [
-    { name: "Board Meeting", date: "2024-03-21",time: "12:00 PM" },
-    { name: "Presentation", date: "2024-03-25",time: "10:00 AM" },
-    { name: "Town Hall", date: "2024-03-10",time: "4:00 PM" },
-    { name: "Board Meeting", date: "2024-04-05",time: "1:00 PM" },
-    { name: "Board Meeting", date: "2024-05-09",time: "3:00 PM" },
-    // Add more events as needed
+    { name: "Grievance Day", date: "2024-05-04",time: "All Day" },
+    { name: "Town Board Meeting", date: "2024-03-12",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-04-09",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-05-14",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-06-11",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-07-09",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-08-13",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-09-10",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-10-08",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-11-12",time: "6:30 PM" },
+    { name: "Town Board Meeting", date: "2024-12-10",time: "6:30 PM" },
+    { name: "Planning Board Meeting", date: "2024-03-27",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-04-24",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-05-22",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-06-26",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-07-24",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-08-28",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-09-25",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-10-23",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-11-27",time: "7:00 PM" },
+    { name: "Planning Board Meeting", date: "2024-12-25",time: "7:00 PM" },
 ];
 
 // Highlighting specific days

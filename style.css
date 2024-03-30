@@ -8,6 +8,7 @@
 
 }
 
+
 /* Keep the header attached to every side of the website */
 body {
     margin: 0;
@@ -234,6 +235,41 @@ header nav ul li a:hover::after {
    
 }
 
+
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+    .content-container {
+        padding: 10px; /* Adjust padding */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .Welcome {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .sidebar {
+        width: 100%; /* Take full width on phones */
+        float: none; /* Remove float */
+    }
+
+    .sidebar .town-name {
+        font-size: 60px; /* Adjust font size */
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+
+    .sidebar .paragraph {
+        font-size: 14px; /* Adjust font size */
+    }
+
+   /*NEED TO MAKE SLIDESHOW SMALLER NOW  */
+}
+
+
+
+
+
 /* Individual slides */
 .mySlides {
     position: absolute; 
@@ -256,6 +292,9 @@ header nav ul li a:hover::after {
 
 /* CSS for town board section */
 
+.member .super {
+    font-size: 15px;
+}
 .board-heading {
     margin-left: 30px;
     margin-top: 25px;
@@ -337,6 +376,10 @@ header nav ul li a:hover::after {
 
 /* Styles for TOWN CALENDAR */
 
+
+
+
+
 .calendar {
     max-width: 600px;
     padding-right: 728px;
@@ -353,6 +396,31 @@ header nav ul li a:hover::after {
     position:relative;
     display: flex;
   }
+
+  /* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .calendar {
+        flex-direction: column; /* Change flex direction to stack items vertically */
+        padding: 20px; /* Adjust padding */
+        max-width: 100%; /* Ensure calendar takes full width of the viewport */
+        padding-right: 20px; /* Adjust padding */
+        padding-left: 20px; /* Adjust padding */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .days {
+        gap: 10px; /* Adjust gap between grid items */
+        padding-left: 10px; /* Adjust padding left */
+        padding-right: 10px; /* Adjust padding right */
+    }
+
+    .day {
+        flex: 0 0 calc(100% / 7 - 20px); /* Adjust width of each day */
+        padding: 15px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size if necessary */
+    }
+}
 
  
 /* Add background color to event days */
@@ -2059,6 +2127,12 @@ header nav ul li a:hover::after {
     text-align: left;
     padding-left: 70px;
     color: var(--dark);
+}
+
+.highway-section img {
+    width: 60%;
+    height: 60%;
+    margin-left: 2px;
 }
 
 .highway-information {
