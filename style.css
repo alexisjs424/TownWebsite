@@ -21,7 +21,7 @@ body {
 .logo-container {
     background-color: var(--beige);
     text-align: center;
-    position: sitcky; /* Position the logo container sticky */
+    
     top: 0; /* Place it at the top of the viewport */
     left: 0; /* Align it to the left */
     width: 100%; /* Make it span the entire width */
@@ -31,6 +31,28 @@ body {
 .logo-container img {
     height: 150px;
     max-width: 100%; /* Ensure the logo image is responsive */
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+    .logo-container {
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+
+    .logo-container img {
+        max-height: 80px; /* Adjust max-height for phones */
+    }
+}
+
+/* Media query for iPads */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .logo-container {
+        padding: 10px 0; /* Reset padding for iPads */
+    }
+
+    .logo-container img {
+        max-height: 100px; /* Adjust max-height for iPads */
+    }
 }
 
 /* The design for whole heading */
@@ -124,6 +146,46 @@ header nav ul li a:hover::after {
 
 #nav li.dropdown-parent:hover .dropdown {
     display: block;
+}
+
+/* Media query for phones and iPads */
+@media only screen and (max-width: 1024px) {
+    header {
+        padding-top: 20px; /* Adjust top padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
+    }
+
+    header nav ul {
+        display: flex; /* Use flexbox to align items horizontally */
+        justify-content: center; /* Center the list items */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    header nav ul li {
+        margin-right: 20px; /* Reduce right margin for smaller screens */
+        margin-bottom: 10px; /* Add space between list items */
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .dropdown {
+        /* Change position to static to avoid overlapping */
+        display: none; /* Hide dropdown by default */
+        width: 100%; /* Make dropdown full width */
+        text-align: center; /* Center dropdown items */
+    }
+
+    .dropdown li {
+        display: block; /* Display dropdown items as blocks */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    #nav li.dropdown-parent:hover .dropdown {
+        display: block; /* Show dropdown on hover */
+    }
 }
 
 /* Styles for the top half blue box */
@@ -263,10 +325,20 @@ header nav ul li a:hover::after {
         font-size: 14px; /* Adjust font size */
     }
 
-   /*NEED TO MAKE SLIDESHOW SMALLER NOW  */
+  
+    
 }
 
-
+/* Media query for phones and iPads */
+@media only screen and (max-width: 1024px) {
+    .slideshow-container {
+        width: 100%; /* Set width to 100% for smaller screens */
+        margin-bottom: -100px;
+        margin-top: 20px;
+        margin-right: 10px 
+        
+    }
+}
 
 
 
@@ -374,10 +446,60 @@ header nav ul li a:hover::after {
 }
 
 
+/* Media query for iPads */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .town-board-section {
+        margin-right: 0;
+    }
+
+    .member {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .member-img {
+        width: 120px;
+        height: 160px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+    .town-board-section {
+        margin-top: 10px;
+    }
+
+    .board-heading {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    .member {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+    .member-img {
+        width: 100px;
+        height: 140px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .member-details h2 {
+        font-size: 24px;
+    }
+
+    .member-details p {
+        font-size: 14px;
+    }
+}
+
+
+
 /* Styles for TOWN CALENDAR */
-
-
-
 
 
 .calendar {
@@ -397,35 +519,8 @@ header nav ul li a:hover::after {
     display: flex;
   }
 
-  /* Add a media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .calendar {
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        padding: 20px; /* Adjust padding */
-        max-width: 100%; /* Ensure calendar takes full width of the viewport */
-        padding-right: 20px; /* Adjust padding */
-        padding-left: 20px; /* Adjust padding */
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-    }
-
-    .days {
-        gap: 10px; /* Adjust gap between grid items */
-        padding-left: 10px; /* Adjust padding left */
-        padding-right: 10px; /* Adjust padding right */
-    }
-
-    .day {
-        flex: 0 0 calc(100% / 7 - 20px); /* Adjust width of each day */
-        padding: 15px; /* Adjust padding */
-        font-size: 16px; /* Adjust font size if necessary */
-    }
-}
-
  
 /* Add background color to event days */
-
-
   .header {
     text-align: center;
     margin-bottom: 20px;
@@ -518,8 +613,6 @@ header nav ul li a:hover::after {
   }
 
  
-  
-/* Add this CSS to your existing stylesheet or create a new one */
 
 .event-box {
     display: flex;
@@ -583,6 +676,67 @@ header nav ul li a:hover::after {
     }
   
 
+  /* Media query for phones and iPads */
+@media only screen and (max-width: 768px) {
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar, .events-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .events-container {
+        margin-top: 20px;
+    }
+
+    .event-box {
+        width: 100%; /* Adjust width of event boxes to occupy full width */
+        margin-bottom: 10px; /* Add spacing between events */
+    }
+
+    .month-year {
+        font-size: 30px;
+    }
+
+    .navigation button {
+        font-size: 18px;
+    }
+
+    .days-of-week {
+        padding-bottom: 15px;
+    }
+
+    .day {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .event-date {
+        font-size: 20px;
+    }
+
+    .event-full-date {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .event-name,
+    .event-time {
+        font-size: 16px;
+    }
+
+    
+}
+
+
+
 /* Quote/ Address Section on Home page*/
 
 .quote-section {
@@ -641,6 +795,29 @@ header nav ul li a:hover::after {
      margin-left: 50px;
      margin-bottom: 20px;
      margin-top:40px;/* Add space below the image */
+}
+
+/* Media queries for phones and iPads */
+@media only screen and (max-width: 768px) {
+    .quote-section {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-left: 10px; /* Adjust margins for smaller screens */
+        margin-right: 10px; /* Adjust margins for smaller screens */
+        margin-top: 20px; /* Adjust margins for smaller screens */
+    }
+
+    .left-section, .right-section, .right-right {
+        flex: none; /* Reset flex property */
+        width: 100%; /* Set width to 100% for smaller screens */
+        margin-left: 20px;
+        margin-right: 20px; /* Remove margin for smaller screens */
+    }
+
+    .quote-section img {
+        margin-left: 20px; /* Center the image */
+        margin-right: 10px; /* Center the image */
+    }
 }
 
 

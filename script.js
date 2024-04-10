@@ -63,6 +63,9 @@ const events = [
     { name: "Planning Board Meeting", date: "2024-12-25",time: "7:00 PM" },
 ];
 
+
+
+
 // Highlighting specific days
 const highlightedDays = ["2024-03-21", "2024-03-25"];
 
@@ -235,4 +238,22 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.addEventListener("click", moveBackward);
 
   setInterval(moveCarousel, 4000);
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if it's a touch device
+  var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+
+  // Toggle dropdown on click for touch devices
+  if (isTouchDevice) {
+      var dropdownLinks = document.querySelectorAll('.dropdown-parent > a');
+      dropdownLinks.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+              event.preventDefault(); // Prevent default behavior of the link
+              var dropdown = this.nextElementSibling;
+              dropdown.classList.toggle('active'); // Toggle the dropdown
+          });
+      });
+  }
 });
