@@ -676,6 +676,8 @@ header nav ul li a:hover::after {
     }
   
 
+    /* THIS IS WHERE STOPPED OPTIMIZING*/
+
   /* Media query for phones and iPads */
 @media only screen and (max-width: 768px) {
     .calendar-container {
